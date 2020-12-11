@@ -1,0 +1,10 @@
+pm.sendRequest({
+    url: 'http://localhost:5000/people/',
+    method: 'POST',
+    body:   {"mode": "raw",
+			  "raw": "{\n        \"firstMame\": \"Gabriel\",\n        \"lastName\": \"Fuentes\",\n        \"age\": 11\n}",
+			  "options": {
+                  "raw": {
+                    "language": "json"}}}}
+        , function (err, response) {
+});
